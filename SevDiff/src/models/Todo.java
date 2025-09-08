@@ -1,13 +1,15 @@
 package models;
 
+import java.sql.Date;
+
 public class Todo {
 
     private int id;
     private String name;
-    private int date;
+    private Date date;
     private boolean finished;
 
-    public Todo(int id, String name, int date, boolean finished){
+    public Todo(int id, String name, Date date, boolean finished){
         this.id = id;
         this.name = name;
         this.date = date;
@@ -30,11 +32,11 @@ public class Todo {
         this.name = name;
     }
 
-    public int getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
