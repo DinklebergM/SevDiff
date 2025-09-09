@@ -1,15 +1,15 @@
 package models;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Todo {
 
     private int id;
     private String name;
-    private Date date;
+    private LocalDate date;
     private boolean finished;
 
-    public Todo(int id, String name, Date date, boolean finished){
+    public Todo(int id, String name, LocalDate date, boolean finished){
         this.id = id;
         this.name = name;
         this.date = date;
@@ -32,15 +32,15 @@ public class Todo {
         this.name = name;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
-    public boolean isFinished() {
+    public boolean getFinished() {
         return finished;
     }
 
